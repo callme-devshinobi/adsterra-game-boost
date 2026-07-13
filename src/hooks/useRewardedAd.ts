@@ -78,12 +78,12 @@ export function useRewardedAd() {
         }
       }
 
-      // Mock fallback: 4-second simulated rewarded video
+      // Mock fallback: 12-second simulated rewarded ad
       setState("playing");
       const timeout = window.setTimeout(() => {
         setState("rewarded");
         onReward();
-      }, 4000);
+      }, 12000);
 
       return () => window.clearTimeout(timeout);
     },
