@@ -99,7 +99,7 @@ export function FlappyGame() {
         </div>
       )}
 
-      <RewardedAdModal open={adOpen} state={adState} provider={provider} />
+      <RewardedAdModal open={adOpen} state={adState} />
     </div>
   );
 }
