@@ -13,11 +13,11 @@ interface RewardedAdModalProps {
 }
 
 export function RewardedAdModal({ open, state }: RewardedAdModalProps) {
-  const [secondsLeft, setSecondsLeft] = useState(4);
+  const [secondsLeft, setSecondsLeft] = useState(12);
 
   useEffect(() => {
     if (state !== "playing") {
-      setSecondsLeft(4);
+      setSecondsLeft(12);
       return;
     }
     const id = window.setInterval(() => {
