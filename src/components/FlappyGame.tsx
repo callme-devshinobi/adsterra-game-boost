@@ -8,7 +8,7 @@ import { Trophy, Zap } from "lucide-react";
 export function FlappyGame() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { status, score, best, flap, continueAfterAd } = useFlappyGame(canvasRef);
-  const { state: adState, provider, showRewardedAd, reset: resetAd } = useRewardedAd();
+  const { state: adState, showRewardedAd, reset: resetAd } = useRewardedAd();
   const [adOpen, setAdOpen] = useState(false);
 
   const handleContinue = () => {
